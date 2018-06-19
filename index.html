@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>AllezCiné</title>
 </head>
@@ -50,7 +50,6 @@
 				            	<img class="d-block w-100 img-responsive" src="img/deadpool2.jpg" alt="affiche film deadpool 2">
 				            	<div class="carousel-caption d-none d-md-block">
 					                <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
-					                <p><button type="button" class="btn btn-secondary btn-lg" disabled>Watch Trailer</button></p>
 					            </div>
 				          	</div>
 
@@ -86,13 +85,108 @@
    				<!-- création espace inter-lignes -->
    				<p>&nbsp;</p>
 
-				<div class="formulaires col-sm-12"> <!--boutons pop up-->
-					<button type="button" class="btn btn-dark btn-sm">LOGIN</button>
-					<button type="button" class="btn btn-dark btn-sm">REGISTER</button>
+
+				<div class="boutons_formulaires col-sm-12"> <!--boutons pop up-->
+					<!-- Button to open the modal login form -->
+						<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+						<!-- The Modal -->
+						<div id="id01" class="modal">
+						  <span onclick="document.getElementById('id01').style.display='none'" 
+						class="close" title="Close Modal">&times;</span>
+
+						  <!-- Modal Content -->
+						  <form class="modal-content animate">
+
+						    <div class="container">
+						    <h3><element id="allez">ALLEZ</element>CINE !</h3>
+						    <h6>Connectez-vous à votre compte</h6>
+						      <label for="uname"><b>Username</b></label>
+						      <input type="text" placeholder="Enter Username" name="uname" required>
+
+						      <label for="psw"><b>Password</b></label>
+						      <input type="password" placeholder="Enter Password" name="psw" required>
+
+						      <button type="submit">Login</button><br>
+						      <label>
+						        <input type="checkbox" checked="checked" name="remember"> Remember me
+						      </label>
+						    </div>
+
+						    <div class="container" style="background-color:#f1f1f1">
+						      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						      <span class="psw">Forgot <a href="#">password?</a></span>
+						    </div>
+						  </form>
+						</div>
+
+					<button onclick="document.getElementById('id02').style.display='block'">Register</button>
+
+						<!-- The Modal -->
+						<div id="id02" class="modal">
+						  <span onclick="document.getElementById('id02').style.display='none'" 
+						class="close" title="Close Modal">&times;</span>
+
+						  <!-- Modal Content -->
+						  <form class="modal-content animate">
+
+						    <div class="container">
+						    <h3><element id="allez">ALLEZ</element>CINE !</h3>
+						    <h6>Enregistrez un compte </h6>
+							    <label for="name"><b>Name</b></label>
+							      	<input type="text" placeholder="Enter name" name="name" required>
+
+							    <label for="uname"><b>Name</b></label>
+							      	<input type="text" placeholder="Enter Username" name="uname" required>
+
+							    <label for="psw"><b>Password</b></label>
+							      	<input type="password" placeholder="Enter Password" name="psw" required>
+
+						        <label for="confirm"><b>Confirm password</b></label>
+									<input type="password" name="Confirm Password" placeholder="confirm_password" required>
+    							
+
+						      <button type="submit">Register</button><br>
+						      <label>
+						        <input type="checkbox" checked="checked" name="remember"> Remember me
+						      </label><br>
+						     <label></label>
+						        <input type="checkbox" checked="checked" name="cg"> Conditions générales d'utilisation
+						      
+						      
+						    </div>
+
+						    <div class="container" style="background-color:#f1f1f1">
+						      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+						    </div>
+						  </form>
+						</div>
+
 				</div>
 			</div>
 
 		</div>
+
+
+		<div class="reseaux-sociaux">
+			<div class="links" id="twitter">
+				<div><i class="fab fa-twitter"></i></div>
+			</div>
+
+			<div class="links" id="facebook">
+				<div><i class="fab fa-facebook-f"></i></div>
+			</div>
+
+			<div class="links" id="instagram">
+				<div><i class="fab fa-instagram"></i></div>
+			</div>
+
+			<div class="links" id="googlep">
+				<div><i class="fab fa-google-plus-g"></i></div>
+			</div>
+			
+		</div>
+
 
 		<div class="main-container">
 			<section class="section-movies">
@@ -117,7 +211,12 @@
 				
 			</div>
 		</div>
-	
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="app.js" type="text/javascript"></script>
+
 	</main>
 </body>
 </html>
