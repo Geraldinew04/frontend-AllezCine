@@ -1,8 +1,46 @@
+/**********RESET CSS**********/
+/*html {
+  box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-size: auto; 
+}
+*/
+/**********HEADER**********/
+
+
 .jumbotron{
 	width: 100%;
 	height: auto;
 	background-color: rgb(52, 58, 64);
 	padding: 0;
+}
+
+.my-nav {
+	position: absolute;
+	width: 100%;
+  	z-index: 999;
+}
+
+.navbar-brand{
+	font-size: 2.5em;
+}
+
+.nav-item{
+	background-color: rgba(108, 117, 125,0.3);
+	padding: 5px;
+	margin-left: 25px;
 }
 
 .carousel{
@@ -21,12 +59,9 @@ h5{
 	font-size: 2.5em;
 }
 
-
-#on, #mo{
+#on, #mo, #allez{
 	color: rgb(220, 53, 69);
 }
-
-
 
 .boutons_formulaires{
 
@@ -37,13 +72,12 @@ h5{
 .btn{
 	margin-top: 0.035em;
 	margin-bottom: 0.031em;
+}
 
-
-
-body {font-family: Arial, Helvetica, sans-serif;}
+/********** POP-UP **********/
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email], #subject, #message{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -53,7 +87,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+.buttonG {
     background-color:rgb(52, 58, 64);
     height: auto;
     color: white;
@@ -64,7 +98,7 @@ button {
  
 }
 
-button:hover {
+.buttonG:hover {
     opacity: 0.8;
 }
 
@@ -156,7 +190,68 @@ span.psw {
     }
 }
 
+/**********RESEAUX SOCIAUX**********/
+
  .reseaux-sociaux{
- 	position: absolute;
- 	left: 0;
- }
+ 	position: fixed;
+ 	top: 250px;
+ 	z-index: 16;
+  }
+
+.links{
+	background-color: #FFF;
+	border-radius: 50%;
+	padding: 20px;
+} 
+
+#twitter{
+	background-color: #00aced;
+}
+#twitter i{
+	color: #00aced;
+}
+
+#facebook{
+	background-color: #3b5998;
+}
+
+#facebook i{
+	color: #3b5998;
+}
+
+#dribble{
+	background-color: #EA4C89;
+}
+
+#dribble i{
+	color: #EA4C89;
+}
+
+#googlep{
+	background-color: #c71512;
+	
+}
+
+#googlep i{
+	color: #c71512
+}
+
+.parent{
+	margin-top: 3px;
+	border-radius: 0 30px 30px 0;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.parent a{
+		color: #FFF;
+	}
+.parent span{
+	display: none;
+	width: 0px;
+}
+.parent:active span,.parent:focus span{
+	display: inherit;
+	width: 100px;
+}

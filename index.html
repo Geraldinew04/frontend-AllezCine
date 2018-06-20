@@ -1,191 +1,248 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<head>
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Allezcine" content="Description">
+
+		<title>AllezCiné</title>
+
+		<!-- Bootstrap CSS -->
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!--Font awesome -->
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>AllezCiné</title>
-</head>
+	</head>
 <body>
+
 	<main>
 		<!-- En-tête-->
 		<div class="main-header">
-			 <div class="jumbotron jumbotron-fluid">
-				<div class="title">
-					
-				</div>
+			<div class="jumbotron jumbotron-fluid">
 
-				<div class="menu">
-					<nav>
-					
-					</nav>
-				</div>
+			<!--MENU-->
 
-				
-			    <div class="carousel col-sm-12"> <!-- Pour faire tourner le carousel, il faut insérer dans ton head les liens <script> de jquery, cloudflare et bootstrap-->
+			<div class="my-nav nav-container">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-none">
+					<a class="navbar-brand" href="#"><element id='allez'>ALLEZ</element><element id='cine'>CINE!</element></a>
+				  	
+				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  		<span class="navbar-toggler-icon"></span>
+				  	</button>
 
-			      	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				        <ol class="carousel-indicators">
-					        <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
-					        <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
-					        <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
-					        <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
-				       	</ol>
+				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  		<ul class="navbar-nav mr-auto">
+				      		<li class="nav-item active">
+				       			 <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+				      		</li>
+				      		<li class="nav-item dropdown active">
+				        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Films
+				       			</a>
+						   		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						           	<a class="dropdown-item" href="#">Action</a>
+						         	<a class="dropdown-item" href="#">Comedy</a>
+						          	<a class="dropdown-item" href="#">Sci-fi</a>
+						          	<a class="dropdown-item" href="#">Fiction</a>
+						   		</div>
+				      		</li>
+				      		<li class="nav-item active">
+				       			 <a class="nav-link " href="#">Featured movies <span class="sr-only">(current)</span></a>
+				      		</li>
+				      		<li class="nav-item active">
+				       			 <a class="nav-link " href="#">Shop movies <span class="sr-only">(current)</span></a>
+				      		</li>
+				      		<li class="nav-item active">
+				        		<a class="nav-link" href="#">Contact</a>
+				      		</li>
+				    	</ul>
 
-			        	<div class="carousel-inner ">
-				          	<div class="carousel-item">
-				            	<img class="d-block w-100 img-responsive" src="img/hiddenf.jpg" alt="affiche film jurassic parc">
-				            	<!--Texte sur photos carousel-->
-				            	<div class="carousel-caption d-none d-md-block">
-					                <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5> <!-- couleur lettres-->
-					                <p><button type="button" class="btn btn-secondary btn-lg" disabled> Watch Trailer </button></p>
-					            </div>
-				          	</div>
+				   		<form class="form-inline my-2 my-lg-0">
+				      		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				      		<button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
+				    	</form>
+					</div>
+				</nav>
+			</div>
 
-				          	<div class="carousel-item">
-				            	<img class="d-block w-100 img-responsive" src="img/deadpool2.jpg" alt="affiche film deadpool 2">
-				            	<div class="carousel-caption d-none d-md-block">
-					                <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
-					            </div>
-				          	</div>
+			<!--IMAGES SLIDE -->	
+				<div class="carousel col-sm-12"> <!-- Pour faire tourner le carousel, il faut insérer dans ton head les liens <script> de jquery, cloudflare et bootstrap-->
 
-				          	<div class="carousel-item ">
-				            	<img class="d-block w-100 img-responsive" src="img/logan.jpg" alt="affiche film mon ket">
-				            	<div class="carousel-caption d-none d-md-block">
-					                <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
-					                <p><button type="button" class="btn btn-secondary btn-lg" disabled>Watch Trailer</button></p>
-					            </div>
-				          	</div>
+				    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					    <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+					    </ol>
 
-				          	<div class="carousel-item active">
-				            	<img class="d-block w-100 img-responsive" src="img/therevenant.jpg" alt="affiche film ocean's 8">
-				            	<div class="carousel-caption d-none d-md-block">
-					                <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
-					                <p><button type="button" class="btn btn-secondary btn-lg" disabled>Watch Trailer</button></p>
-					            </div>
-				          	</div>
+				       	<div class="carousel-inner ">
+					        <div class="carousel-item">
+					            <img class="d-block w-100 img-responsive" src="img/hiddenf.jpg" alt="affiche film jurassic parc">
+					            	<!--Texte sur photos carousel-->
+					            <div class="carousel-caption d-none d-md-block">
+						           	<h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5> <!-- couleur lettres-->
+						            <p><button type="button" class="btn btn-secondary btn-lg" disabled> Watch Trailer </button></p>
+						        </div>
+					        </div>
 
-				        
-				          	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				            	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				            	<span class="sr-only">Previous</span>
-				         	</a>
-				          	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				           		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				           		<span class="sr-only">Next</span>
-				          	</a>
-				      	</div>
-   					</div>
-   				</div>
+					        <div class="carousel-item">
+					            <img class="d-block w-100 img-responsive" src="img/deadpool2.jpg" alt="affiche film deadpool 2">
+					            <div class="carousel-caption d-none d-md-block">
+						            <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
+						        </div>
+					        </div>
 
-   				<!-- création espace inter-lignes -->
-   				<p>&nbsp;</p>
+					        <div class="carousel-item ">
+					            <img class="d-block w-100 img-responsive" src="img/logan.jpg" alt="affiche film mon ket">
+					            <div class="carousel-caption d-none d-md-block">
+						            <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
+						            <p><button type="button" class="btn btn-secondary btn-lg" disabled>Watch Trailer</button></p>
+						        </div>
+					        </div>
 
+					        <div class="carousel-item active">
+					            <img class="d-block w-100 img-responsive" src="img/therevenant.jpg" alt="affiche film ocean's 8">
+					            <div class="carousel-caption d-none d-md-block">
+						            <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
+						            <p><button type="button" class="btn btn-secondary btn-lg" disabled>Watch Trailer</button></p>
+						        </div>
+					        </div>
+
+					        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					            <span class="sr-only">Previous</span>
+					        </a>
+					        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					           	<span class="sr-only">Next</span>
+					        </a>
+					    </div>
+	   				</div>
+	   			</div>
+
+	   			<!-- création espace inter-lignes -->
+	   			<p>&nbsp;</p>
+
+	   			<!-- POP UP LOGIN -->
 
 				<div class="boutons_formulaires col-sm-12"> <!--boutons pop up-->
 					<!-- Button to open the modal login form -->
-						<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+					<button class="buttonG" onclick="document.getElementById('id01').style.display='block'">Login</button>
 
-						<!-- The Modal -->
-						<div id="id01" class="modal">
-						  <span onclick="document.getElementById('id01').style.display='none'" 
+					<!-- The Modal -->
+					<div id="id01" class="modal">
+						<span onclick="document.getElementById('id01').style.display='none'" 
 						class="close" title="Close Modal">&times;</span>
 
-						  <!-- Modal Content -->
-						  <form class="modal-content animate">
+						<!-- Modal Content -->
+						<form class="modal-content animate">
+							<div class="container">
+							    <h3><element id="allez">ALLEZ</element>CINE !</h3>
+							    <h6>Connectez-vous à votre compte</h6>
+							       
+							       	<label for="uname"><b>Username</b></label>
+							       		<input type="text" placeholder="Enter Username" name="uname" required>
 
-						    <div class="container">
-						    <h3><element id="allez">ALLEZ</element>CINE !</h3>
-						    <h6>Connectez-vous à votre compte</h6>
-						      <label for="uname"><b>Username</b></label>
-						      <input type="text" placeholder="Enter Username" name="uname" required>
+							       	<label for="psw"><b>Password</b></label>
+							       		<input type="password" placeholder="Enter Password" name="psw" required>
 
-						      <label for="psw"><b>Password</b></label>
-						      <input type="password" placeholder="Enter Password" name="psw" required>
+							       	<button class="buttonG" type="submit">Login</button><br>
 
-						      <button type="submit">Login</button><br>
-						      <label>
-						        <input type="checkbox" checked="checked" name="remember"> Remember me
-						      </label>
-						    </div>
+							       	<label>
+							       		<input type="checkbox" checked="checked" name="remember"> Remember me
+							      	</label>
+							</div>
 
-						    <div class="container" style="background-color:#f1f1f1">
-						      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-						      <span class="psw">Forgot <a href="#">password?</a></span>
-						    </div>
-						  </form>
-						</div>
+							<div class="container" style="background-color:#f1f1f1">
+							    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							       <span class="psw">Forgot <a href="#">password?</a></span>
+							</div>
+						</form>
+					</div>
 
-					<button onclick="document.getElementById('id02').style.display='block'">Register</button>
+					<!-- POP UP REGISTER -->
 
-						<!-- The Modal -->
-						<div id="id02" class="modal">
-						  <span onclick="document.getElementById('id02').style.display='none'" 
+					<button class="buttonG"onclick="document.getElementById('id02').style.display='block'">Register</button>
+
+					<!-- The Modal -->
+					<div id="id02" class="modal">
+						<span onclick="document.getElementById('id02').style.display='none'" 
 						class="close" title="Close Modal">&times;</span>
 
-						  <!-- Modal Content -->
-						  <form class="modal-content animate">
+					<!-- Modal Content -->
+						<form class="modal-content animate">
 
-						    <div class="container">
-						    <h3><element id="allez">ALLEZ</element>CINE !</h3>
-						    <h6>Enregistrez un compte </h6>
-							    <label for="name"><b>Name</b></label>
-							      	<input type="text" placeholder="Enter name" name="name" required>
+							<div class="container">
+							   	<h3><element id="allez">ALLEZ</element>CINE !</h3>
+							    <h6>Enregistrez un compte </h6>
 
-							    <label for="uname"><b>Name</b></label>
-							      	<input type="text" placeholder="Enter Username" name="uname" required>
+								    <label for="name"><b>Name</b></label>
+								      	<input type="text" placeholder="Enter name" name="name" required>
 
-							    <label for="psw"><b>Password</b></label>
-							      	<input type="password" placeholder="Enter Password" name="psw" required>
+								    <label for="uname"><b>Name</b></label>
+								      	<input type="text" placeholder="Enter Username" name="uname" required>
 
-						        <label for="confirm"><b>Confirm password</b></label>
-									<input type="password" name="Confirm Password" placeholder="confirm_password" required>
-    							
+								    <label for="psw"><b>Password</b></label>
+								      	<input type="password" placeholder="Enter Password" name="psw" required>
 
-						      <button type="submit">Register</button><br>
-						      <label>
-						        <input type="checkbox" checked="checked" name="remember"> Remember me
-						      </label><br>
-						     <label></label>
-						        <input type="checkbox" checked="checked" name="cg"> Conditions générales d'utilisation
-						      
-						      
-						    </div>
+							        <label for="confirm"><b>Confirm password</b></label>
+										<input type="password" name="Confirm Password" placeholder="confirm_password" required>
+	    							
 
-						    <div class="container" style="background-color:#f1f1f1">
-						      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-						    </div>
-						  </form>
-						</div>
+							      	<button class="buttonG"type="submit">Register</button><br>
 
+							      	<label>
+							        	<input type="checkbox" checked="checked" name="remember"> Remember me
+							      	</label><br>
+							    	<label></label>
+							        	<input type="checkbox" checked="checked" name="cg"> Conditions générales d'utilisation						      
+							</div>
+
+							<div class="container" style="background-color:#f1f1f1">
+							    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-
 		</div>
 
+		<!-- MENU RESEAUX SOCIAUX -->
+		<section class="reseaux-sociaux">
+			<div>
 
-		<div class="reseaux-sociaux">
-			<div class="links" id="twitter">
-				<div><i class="fab fa-twitter"></i></div>
+				<button class="parent" id="twitter">
+					<span><a href="#">Twitter</a></span>
+					<i class="fab fa-twitter fa-lg links" aria-hidden="true"></i>
+				</button>
 			</div>
-
-			<div class="links" id="facebook">
-				<div><i class="fab fa-facebook-f"></i></div>
+			<div>
+				<button class="parent" id="facebook">
+					<span><a href="#">facebook</a></span>
+					<i class="fab fa-facebook-f fa-lg links" aria-hidden="true"></i>
+				</button>
 			</div>
-
-			<div class="links" id="instagram">
-				<div><i class="fab fa-instagram"></i></div>
+			<div>
+				<button class="parent" id="dribble">
+					<span><a href="#">Dribble</a></span>
+					<i class= "fab fa-dribbble fa-lg links" aria-hidden="true"></i>
+				</button>
 			</div>
-
-			<div class="links" id="googlep">
-				<div><i class="fab fa-google-plus-g"></i></div>
+			<div>
+				<button class="parent" id="googlep">
+					<span><a href="#">Google +</a></span>
+					<i class="fab fa-google-plus-g fa-lg links" aria-hidden="true"></i>
+				</button>
 			</div>
 			
-		</div>
+		</section>
 
 
 		<div class="main-container">
@@ -201,7 +258,85 @@
 				
 			</section>
 
-			<section class="section-contact">
+			<section class="section-contact row">
+
+			<div class="col-sm-2">
+
+
+				
+			</div>
+
+			<div class="col-sm-8">
+
+		  		<form>
+		  		<div class="row">
+    			<div class="col">
+				  	<div class="form-group">   
+					  	<label for="fname">First Name</label>
+					    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+					</div>
+				</div>
+
+				<div class="col">
+				  	<div class="form-group">
+				    	<label for="lname">Last Name</label>
+				    	<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					</div>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col">
+				  	<div class="form-group">
+						<label for="email">Email address</label>
+				  		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+				  	</div>
+				</div>
+
+				<div class="col">
+				  	<div class="form-group">
+					    <label for="subject">Objet du message</label>
+					    <select id="subject" name="subject">
+					      <option value="bug">Bug technique</option>
+					      <option value="erreur">Erreur de séance, de billeterie</option>
+					      <option value="info_error">Information erronée dans le contenu</option>
+					      <option value="amélioration">Suggérer une amélioration</option>
+					      <option value="régie">Contacter la régie publicitaire</option>
+					      <option value="rédaction">Contacter la rédaction</option>
+					      <option value="pôle-exp">Contacter le pôle exploitant</option>
+					      <option value="autre">Autre</option>
+					    </select>
+					</div>
+				</div>
+			</div>
+
+				<div class="row">
+				<div class="col">
+					<div class="form-group">
+					    <label for="message">Message</label><br>
+					    <textarea id="message" name="message" placeholder="Write something.."></textarea>
+					</div>
+				</div>
+				</div> 	
+
+				<div class="row">
+				<div class="col">
+					<div class="button">
+		    			<input type="submit" value="Submit" >
+					</div>	
+				</div>
+				</div>
+					
+
+				</div>
+
+		  	</form>
+
+	    </div>
+	    <div class="col-sm-2">
+				
+			</div>
+
+
 				
 			</section>
 		</div>
