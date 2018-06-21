@@ -1,16 +1,13 @@
-function openPopup(){
-	// Get the modal
-var modal = document.getElementById('id01');
+/**********POP UP COOKIES**********/
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+/**********POP UP CONTACT**********/
+function recup() {
+	var name = document.getElementById("fname").value;
+	var lastname = document.getElementById("lname").value;
+	var email = document.getElementById("exampleFormControlInput1").value;
+	var subject =  document.getElementById("subject").value;
+	var message = document.getElementById("message").value;
+
+	alert("FIRST NAME : " + name + "\nLAST NAME : " + lastname + "\nEMAIL : " + email + "\nSUBJECT : " + subject +  "\nMESSAGE : " + message);
 }
 
-
-function close(){
-	document.getElementById("popup").style.top = "-25.000em";
-}

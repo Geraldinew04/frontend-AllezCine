@@ -16,7 +16,21 @@ html, body {
   background-color: white;
   background-size: auto; 
 }
-*/
+/**********POP UP COOKIES**********/
+.cookies{ 
+	top:0; 
+	-moz-transition: top 0.35s ease-in-out; 
+	-webkit-transition: top 0.35s ease-in-out; 
+	-o-transition: top 0.35s ease-in-out; 
+	-ms-transition: top 0.35s ease-in-out; 
+	transition: top 0.35s ease-in-out; 
+}
+
+#cookies-banner{ 
+	position:fixed; top:0; left:0; z-index:9999; 
+	width:100%; border-radius:0; padding:5px 10px; 
+	vertical-align:middle;
+	margin:0; }
 /**********HEADER**********/
 
 
@@ -201,7 +215,7 @@ span.psw {
 .links{
 	background-color: #FFF;
 	border-radius: 50%;
-	padding: 20px;
+	padding: 5px;
 } 
 
 #twitter{
@@ -246,12 +260,27 @@ span.psw {
 
 .parent a{
 		color: #FFF;
-	}
+}
+
 .parent span{
 	display: none;
 	width: 0px;
 }
+
 .parent:active span,.parent:focus span{
 	display: inherit;
 	width: 100px;
+}
+
+/**********CONTACT**********/
+
+h3{
+	border-left: 3px solid rgb(220, 53, 69);
+	text-align: center;
+}
+
+iframe{
+	display: block; 
+	margin-right: auto; 
+	margin-left: auto; 
 }
