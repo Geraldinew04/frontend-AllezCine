@@ -32,11 +32,6 @@
 	
 	</head>
 <body>
-
-	<!--POP UP AGE-->
-
-
-
 	<main>
 		<!-- En-tête-->
 		<div class="main-header">
@@ -76,7 +71,7 @@
 				       			 <a class="nav-link " href="#">Shop movies <span class="sr-only">(current)</span></a>
 				      		</li>
 				      		<li class="nav-item active">
-				        		<a class="nav-link" href="#">Contact</a>
+				        		<a class="nav-link" href="#c">Contact</a>
 				      		</li>
 				    	</ul>
 
@@ -105,7 +100,7 @@
 					            	<!--Texte sur photos carousel-->
 					            <div class="carousel-caption d-none d-md-block">
 						           	<h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5> <!-- couleur lettres-->
-						            <p><button type="button" class="btn btn-secondary btn-lg" disabled> Watch Trailer </button></p>
+						            <p><button type="button" class="btn btn-danger btn-lg" disabled> Watch Trailer </button></p>
 						        </div>
 					        </div>
 
@@ -113,6 +108,7 @@
 					            <img class="d-block w-100 img-responsive" src="img/deadpool2.jpg" alt="affiche film deadpool 2">
 					            <div class="carousel-caption d-none d-md-block">
 						            <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
+						            <p><button type="button" class="btn btn-danger btn-lg" disabled> Watch Trailer </button></p>
 						        </div>
 					        </div>
 
@@ -120,7 +116,7 @@
 					            <img class="d-block w-100 img-responsive" src="img/therevenant.jpg" alt="affiche film mon ket">
 					            <div class="carousel-caption d-none d-md-block">
 						            <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
-						            <p><button type="button" class="btn btn-secondary btn-lg" disabled>Watch Trailer</button></p>
+						            <p><button type="button" class="btn btn-danger btn-lg" disabled>Watch Trailer</button></p>
 						        </div>
 					        </div>
 
@@ -128,7 +124,7 @@
 					            <img class="d-block w-100 img-responsive" src="img/express.jpg" alt="affiche film ocean's 8">
 					            <div class="carousel-caption d-none d-md-block">
 						            <h5><strong>LATEST <element id="on">ON</element>LINE <element id="mo"> MO</element>VIE </strong></h5>
-						            <p><button type="button" class="btn btn-secondary btn-lg" disabled>Watch Trailer</button></p>
+						            <p><button type="button" class="btn btn-danger btn-lg" disabled>Watch Trailer</button></p>
 						        </div>
 					        </div>
 
@@ -277,7 +273,7 @@
 
 			<!--FORMULAIRE CONTACT-->
 			<!--Titre-->
-			<section class="section-contact">
+			<section id="c" class="section-contact">
 				<div class="row">
 					<div class="col-sm-1">
 					</div>
@@ -371,10 +367,20 @@
 			<!-- Footer -->
 			<section id="footer">
 				<div class="container">
-					<div class="row text-center text-xs-center text-sm-left text-md-left">
-						<div class="col-xs-12 col-sm-1 col-md-1">
+					<p>SUBSCRIBE TO US<p>
+					<form class="form-inline">
+						<div class="form-group">
+						    <label for="Email" class="sr-only">Email</label>
+						    <input type="text" readonly class="form-control-plaintext" id="inputEmail" placeholder="Email">
 						</div>
-						<div class="col-xs-12 col-sm-2 col-md-2">
+
+						<button type="submit" class="btn btn-danger" id="btnFooter">SUBSCRIBE</button>
+					</form>
+
+					<div class="row text-center  text-sm-left text-md-left">
+						<div class="col-sm-1 col-md-1">
+						</div>
+						<div class="col-sm-2 col-md-2">
 							<h6 class="title-footer">RELEASE</h6>
 							<ul class="list-unstyled quick-links">
 								<li><a href="#"><i class="fa fa-angle-double-right"></i>2018</a></li>
@@ -464,7 +470,10 @@
 						
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+	
+							<h6 class="mx-auto" >CONNECT US</h6>
+						
+						<div class="col-sm-12 col-md-12 mt-2 mt-sm-2">
 							<ul class="list-unstyled list-inline social text-center">
 								<li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
 								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
