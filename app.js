@@ -1,8 +1,4 @@
 /**********POP UP AGE**********/
-// $(document).ready(function(){
-// 	ageVerif();
-// });
-
 // function ageVerif() {
 
 // 	let ageVerif = prompt("Please enter your age !");
@@ -38,4 +34,22 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 });
 
+/**********loginRegister**********/
+function loginRegister(){
+	$("#buttonLogin").click(function(){
+		$("#loginModal").modal();
+	});
+	$("#buttonRegister").click(function(){
+		$("#registerModal").modal();
+	});
+	$("#buttonSwitch").click(function(){
+		$("#loginModal").modal("hide") && $("#registerModal").modal();
+	});
+}
+
+
+$(document).ready(function(){
+	// ageVerif();
+	loginRegister();
+});
 
