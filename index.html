@@ -33,6 +33,10 @@
 	</head>
 <body>
 	<main>
+
+		<a name="haut" id="haut"></a>
+   
+				<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
 		<!-- En-tête-->
 		<div class="main-header">
 			<div class="jumbotron jumbotron-fluid">
@@ -46,29 +50,31 @@
 				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  		<span class="navbar-toggler-icon"></span>
 				  	</button>
+				  	
 
 				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				  		<ul class="navbar-nav mr-auto">
 				      		<li class="nav-item active">
 				       			 <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
 				      		</li>
+				      		<li class="nav-item active">
+				       			 <a class="nav-link " href="#sectionfm">Movies <span class="sr-only">(current)</span></a>
+				      		</li>
 				      		<li class="nav-item dropdown active">
-				        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Films
+				        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Featured movies
 				       			</a>
 						   		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						           	<a class="dropdown-item" href="#">Action</a>
 						         	<a class="dropdown-item" href="#">Comedy</a>
 						          	<a class="dropdown-item" href="#">Sci-fi</a>
 						          	<a class="dropdown-item" href="#">Fiction</a>
-						          	<a class="dropdown-item" href="#">Horror</a>
+						          	<a class="dropdown-item" href="#">Thriller</a>
 						          	<a class="dropdown-item" href="#">Drama</a>
 						   		</div>
 				      		</li>
+				      		
 				      		<li class="nav-item active">
-				       			 <a class="nav-link " href="#">Featured movies <span class="sr-only">(current)</span></a>
-				      		</li>
-				      		<li class="nav-item active">
-				       			 <a class="nav-link " href="#">Shop movies <span class="sr-only">(current)</span></a>
+				       			 <a class="nav-link " href="#sectionshopm">Shop movies <span class="sr-only">(current)</span></a>
 				      		</li>
 				      		<li class="nav-item active">
 				        		<a class="nav-link" href="#c">Contact</a>
@@ -258,16 +264,39 @@
 		</section>
 
 
-		<div class="main-container">
+<div class="main-container">
 			<section class="section-movies">
 				
 			</section>
 
-			<section class="section-featured-movies">
+			<section id="sectionfm" class="section-featured-movies">
+				<div class="row">
+					<div class="col-sm-1">
+					</div>
+
+					<div class="col-sm-3">
+						<h3 class="title">FEATURED MOVIES</h3>
+					</div>
+						
+					<div class="col-sm-8">
+			    	</div>
+			    </div>
+				
 				
 			</section>
 			
-			<section class="section-shop-movies">
+			<section id="sectionshopm" class="section-shop-movies">
+					<div class="row">
+					<div class="col-sm-1">
+					</div>
+
+					<div class="col-sm-3">
+						<h3 class="title">SHOP MOVIES</h3>
+					</div>
+						
+					<div class="col-sm-8">
+			    	</div>
+			    </div>
 				
 			</section>
 
@@ -278,11 +307,11 @@
 					<div class="col-sm-1">
 					</div>
 
-					<div class="col-sm-2">
+					<div class="col-sm-3">
 						<h3 class="title">CONTACT US</h3>
 					</div>
 						
-					<div class="col-sm-9">
+					<div class="col-sm-8">
 			    	</div>
 			    </div>
 		
@@ -361,7 +390,7 @@
 
 				</div>	
 			</section>
-		<!-- </div> -->
+</div>
 
 		<div class="main-footer">
 			<!-- Footer -->
@@ -394,7 +423,7 @@
 								<li><a href="#"><i class="fa fa-angle-double-right"></i>2010</a></li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-2 col-md-2">
+						<div class="col-sm-2 col-md-2">
 							<h6 class="title-footer">MOVIES</h6>
 							<ul class="list-unstyled quick-links">
 								<li><a href="#"><i class="fa fa-angle-double-right"></i>Action</a></li>
@@ -405,7 +434,7 @@
 								<li><a href="#"><i class="fa fa-angle-double-right"></i>Drama</a></li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-2 col-md-2">
+						<div class="col-sm-2 col-md-2">
 							<h6 class="title-footer">REVIEW MOVIES</h6>
 							<ul class="list-unstyled quick-links" id="tags">
 								<li >
@@ -423,7 +452,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-2 col-md-2">
+						<div class="col-sm-2 col-md-2">
 							<h6 class="title-footer">LATEST MOVIES</h6>
 							<ul class="list-unstyled quick-links">
 								<li>
@@ -437,7 +466,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-2 col-md-3">
+						<div class="col-sm-2 col-md-3">
 							<h6 class="title-footer"><element id='allez'>ALLEZ</element><element id='cine'>CINE!</element></h6>
 							<ul class="list-unstyled quick-links">
 								<li>
@@ -485,8 +514,7 @@
 					</div>		
 				</div>
 
-				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
+				
 			</section>
 			<!-- ./Footer -->
 		</div>

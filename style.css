@@ -41,13 +41,13 @@ html, body {
 
 .nav-item{
 	background-color: rgba(108, 117, 125,0.3);
-	margin-left: 25px;
+	margin-left: 1.563em;
 }
 
 .nav-item:hover{
     background-color: rgba(220, 53, 69,0.6);
-    padding: 5px;
-    margin-left: 25px;
+    padding: 0.313em;
+    margin-left: 1.563em;
 }
 
 .carousel{
@@ -87,10 +87,10 @@ h5{
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=email], #subject, #message{
     width: 100%;
-    padding: 12px 20px;
+    padding: 0.750em 1.250em;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 0.063em solid #ccc;
     box-sizing: border-box;
 }
 
@@ -99,8 +99,8 @@ input[type=text], input[type=password], input[type=email], #subject, #message{
     background-color:rgb(52, 58, 64);
     height: auto;
     color: white;
-    padding: 10px 10px;
-    margin: 8px 0;
+    padding: 0.625em 0.625em;
+    margin: 0.500em 0;
     border: none;
     cursor: pointer;
  
@@ -113,13 +113,13 @@ input[type=text], input[type=password], input[type=email], #subject, #message{
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
-    padding: 10px 18px;
+    padding: 0.625em 1.125em;
     background-color: #f44336;
 }
 
 
 .container {
-    padding: 16px;
+    padding: 1.000em;
 }
 
 .container h3, .container h5{
@@ -129,7 +129,7 @@ input[type=text], input[type=password], input[type=email], #subject, #message{
 
 span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 1.000em;
 }
 
 /* The Modal (background) */
@@ -144,7 +144,7 @@ span.psw {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    padding-top: 3.750em;
 }
 
 /* Modal Content/Box */
@@ -158,10 +158,10 @@ span.psw {
 /* The Close Button (x) */
 .close {
     position: absolute;
-    right: 25px;
+    right: 1.563em;
     top: 0;
     color: #000;
-    font-size: 35px;
+    font-size: 2.188em;
     font-weight: bold;
 }
 
@@ -188,7 +188,7 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 18.750em) {
     span.psw {
        display: block;
        float: none;
@@ -202,7 +202,7 @@ span.psw {
 
  .reseaux-sociaux{
  	position: fixed;
- 	top: 250px;
+ 	top: 15.625em;
  	z-index: 16;
   }
 
@@ -213,46 +213,48 @@ span.psw {
 
 #twitter{
 	background-color: #00aced;	
+    padding: 0.625em;
 }
 
 #twitter i{
 	color: #00aced;
-	padding: 7px;
+	padding: 0.438em;
 }
 
 #facebook{
 	background-color: #3b5998;
+    padding: 0.750em;
 }
 
 #facebook i{
 	color: #3b5998;
-	padding: 10px;
+    padding: 0.375em;
 }
 
 #dribble{
 	background-color: #EA4C89;
-	
+	padding: 0.625em;
 }
 
 #dribble i{
 	color: #EA4C89;
-	padding: 7px;
+	padding: 0.438em;
 }
 
 #googlep{
 	background-color: #c71512;
+    padding: 0.625em;
 	
 }
 
 #googlep i{
 	color: #c71512;
-	padding: 5px;
+	padding: 0.313em;
 }
 
 .parent{
-	margin-top: 3px;
-	border-radius: 0 30px 30px 0;
-	padding: 10px;
+	margin-top: 0.188em;
+	border-radius: 0 1.875em 1.875em 0;
 	text-align: center;
 	cursor: pointer;
 }
@@ -263,19 +265,19 @@ span.psw {
 
 .parent span{
 	display: none;
-	width: 0px;
+	width: 0.000em;
 }
 
 .parent:active span,.parent:focus span{
 	display: inherit;
-	width: 100px;
+	width: 6.250em;
 }
 
 /**********CONTACT**********/
 
 h3{
-	border-left: 3px solid rgb(220, 53, 69);
-	text-align: center;
+	border-left: 0.188em solid rgb(220, 53, 69);
+    padding-left: 1.250em;
 }
 
 iframe{
@@ -288,18 +290,18 @@ iframe{
 	background-color: rgb(220, 53, 69);
 	border-color: rgb(220, 53, 69);
 	color: #FFF;
-    padding: 5px;
+    padding: 0.313em;
 }
 /************Footer ************/
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 60px 0;
+    padding: 3.750em 0;
 }
 
 section .section-title {
     text-align: center;
     color: #007b5e;
-    margin-bottom: 50px;
+    margin-bottom: 3.125em;
     text-transform: uppercase;
 }
 
@@ -309,11 +311,11 @@ section .section-title {
 
 .form-inline{
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 #footer h6{
-    margin-bottom: 20px;
+    margin-bottom: 1.250em;
     color:#ffffff;
 }
 
@@ -326,12 +328,12 @@ section .section-title {
 
 #footer input{
     color: #FFF;
-    width: 400px;
-    padding: 5px;
+    width: 25.000em;
+    padding: 0.313em;
 }
 
 #footer .form-group{
-    margin-right: 10px;
+    margin-right: 0.625em;
 }
 
 #footer a {
@@ -342,20 +344,20 @@ section .section-title {
 }
 
 #footer ul.social li{
-	padding: 3px 0;
+	padding: 0.188em 0;
 }
 
 #footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
+    margin-right: 0.313em;
+	font-size: 1.563em;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 }
 
 #footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
+	font-size: 1.875em;
+	margin-top:-0.625em;
 }
 
 #footer ul.social li a,
@@ -364,23 +366,23 @@ section .section-title {
 }
 
 #footer ul.quick-links li{
-	padding: 3px 0;
+	padding: 0.188em 0;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 }
 
 #footer ul.quick-links li a i{
-	margin-right: 5px;
+	margin-right: 0.313em;
 }
 
 
-@media (max-width:767px){
+@media (max-width:47.938em){
 	#footer h6 {
     padding-left: 0;
     border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+    padding-bottom: 0.000em;
+    margin-bottom: 0.625em;
 }
 }
 
@@ -396,26 +398,39 @@ section .section-title {
 
 /***********LATEST MOVIES***********/
 #footer ul.quick-links img{
-	height: 80px;
-	width: 80px;
+	height: 5.000em;
+	width: 5.000em;
 }
 /**********BUTTON UP**********/
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+a#cRetour{
+  border-radius:3px;
+  padding:0.625em;
+  font-size:0.938em;
+  text-align:center;
+  color:#fff;
+  background:rgb(220, 53, 69);
+  position:fixed;
+  right:1.250em;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+  bottom:-1.250em;
+  opacity:0;
+  transition:all ease-in 0.5s;
 }
 
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+a#cRetour.cVisible{
+  bottom:1.250em;
+  opacity:1;
 }
+

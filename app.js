@@ -6,6 +6,8 @@
 // function ageVerif() {
 
 // 	let ageVerif = prompt("Please enter your age !");
+	
+
 // 	do{
 // 		if (ageVerif < 18) {
 // 			document.location.href="https://www.imdb.com/";
@@ -27,21 +29,13 @@
 // 	var subject =  document.getElementById("subject").value;
 // 	var message = document.getElementById("message").value;
 
-// 	alert("FIRST NAME : " + name + "\nLAST NAME : " + lastname + "\nEMAIL : " + email + "\nSUBJECT : " + subject +  "\nMESSAGE : " + message);
-// }
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+/**********BUTTON UP**********/
+document.addEventListener('DOMContentLoaded', function() {
+  window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+  };
+});
+
+
